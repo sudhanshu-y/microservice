@@ -48,6 +48,14 @@ This project demonstrates inter-service communication using **Eureka Discovery**
 
 
 
+## ✅ Testing Artifacts
+
+Detailed test cases and test results are available in:
+
+- [`Task1-dev-test-artifacts.docx`](./Task1-dev-test-artifacts.docx)
+
+---
+
 # 📘 Role Management - Task 2
 
 This project manages role data using an in-memory **H2 database**, with custom role hierarchy building and **AOP-based method logging**.
@@ -94,5 +102,13 @@ This project manages role data using an in-memory **H2 database**, with custom r
 1. Start the service.
 2. Access H2 console at `/h2-console` (JDBC URL: `jdbc:h2:mem:testdb`)
 3. Use `/role/{id}` and `/allroles` to test functionality.
+
+---
+
+## ✅ Testing Artifacts
+
+Detailed test cases and test results are available in:
+
+- [`Task2-dev-test-artifacts.docx`](./Task2-dev-test-artifacts.docx)
 
 ---
