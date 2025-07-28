@@ -1,5 +1,4 @@
-# microservice
-microservice projects
+# Microservice projects
 
 
 # 🚀 Microservices - Task 1
@@ -47,3 +46,53 @@ This project demonstrates inter-service communication using **Eureka Discovery**
 
 ---
 
+
+
+# 📘 Role Management - Task 2
+
+This project manages role data using an in-memory **H2 database**, with custom role hierarchy building and **AOP-based method logging**.
+
+---
+
+## 🧩 Features
+
+- Role data loaded via `data.sql`
+- Returns nested role structures (parent-child)
+- Manual hierarchy logic (no ORM relationships)
+- Each role includes a `color` attribute
+
+---
+
+
+## 📚 API Endpoints
+
+- `GET /role/{id}` – Get role by ID
+- `GET /allroles` – Get all roles in a nested structure
+
+---
+
+## 💾 Database
+
+- **H2 in-memory DB** populated using `data.sql`.
+- Roles stored with `id`, `name`, `parentId`, and `color`.
+
+---
+
+## 🧱 Components
+
+| Class        | Purpose                            |
+|--------------|-------------------------------------|
+| `Role`       | Entity representing DB role table   |
+| `RoleDto`    | Output model for API responses      |
+| `RoleMapper` | Converts `Role` to `RoleDto`        |
+| `RoleService`| Logic for fetching roles and nesting|
+
+---
+
+## ▶️ Running the Project
+
+1. Start the service.
+2. Access H2 console at `/h2-console` (JDBC URL: `jdbc:h2:mem:testdb`)
+3. Use `/role/{id}` and `/allroles` to test functionality.
+
+---
