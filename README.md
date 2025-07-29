@@ -1,13 +1,13 @@
 # Microservice projects
 
 
-# 🚀 Microservices - Task 1
+# Microservices - Task 1
 
 This project demonstrates inter-service communication using **Eureka Discovery**, **Micrometer Tracing**, and **AOP-based logging**.
 
 ---
 
-## 🧩 Services Overview
+## Services Overview
 
 ### 0. Eureka Server
 - All services register as **Eureka clients**.
@@ -25,7 +25,7 @@ This project demonstrates inter-service communication using **Eureka Discovery**
 
 ---
 
-## 🔍 Logging & Tracing
+## Logging & Tracing
 
 - **Custom Annotation**: `@LogMethodParam`
   - Logs method name and input parameters before execution.
@@ -37,7 +37,7 @@ This project demonstrates inter-service communication using **Eureka Discovery**
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 1. **Start Eureka Server** (`eureka-server`)
 2. **Run Hello, Name, and Main Services**
@@ -48,7 +48,7 @@ This project demonstrates inter-service communication using **Eureka Discovery**
 
 
 
-## ✅ Testing Artifacts
+## Testing Artifacts
 
 Detailed test cases and test results are available in:
 
@@ -56,13 +56,13 @@ Detailed test cases and test results are available in:
 
 ---
 
-# 📘 Role Management - Task 2
+# Role Management - Task 2
 
 This project manages role data using an in-memory **H2 database**, with custom role hierarchy building and **AOP-based method logging**.
 
 ---
 
-## 🧩 Features
+## Features
 
 - Role data loaded via `data.sql`
 - Returns nested role structures (parent-child)
@@ -72,21 +72,21 @@ This project manages role data using an in-memory **H2 database**, with custom r
 ---
 
 
-## 📚 API Endpoints
+## API Endpoints
 
 - `GET /role/{id}` – Get role by ID
 - `GET /allroles` – Get all roles in a nested structure
 
 ---
 
-## 💾 Database
+## Database
 
 - **H2 in-memory DB** populated using `data.sql`.
 - Roles stored with `id`, `name`, `parentId`, and `color`.
 
 ---
 
-## 🧱 Components
+## Components
 
 | Class        | Purpose                            |
 |--------------|-------------------------------------|
@@ -97,7 +97,7 @@ This project manages role data using an in-memory **H2 database**, with custom r
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 1. Start the service.
 2. Access H2 console at `/h2-console` (JDBC URL: `jdbc:h2:mem:testdb`)
@@ -105,7 +105,7 @@ This project manages role data using an in-memory **H2 database**, with custom r
 
 ---
 
-## ✅ Testing Artifacts
+## Testing Artifacts
 
 Detailed test cases and test results are available in:
 
